@@ -266,7 +266,7 @@ This is a good example of a Layer 2 problem disguising itself as a Layer 3 probl
 
 | Test | From | To | Result |
 | :--- | :--- | :--- | :--- |
-| ping 10.0.1.1 | Rocky | Ubuntu LAN | PASS |
+| ping 10.0.1.1 | Rocky | Ubuntu LAN | ✅ PASS |
 | ping 8.8.8.8 | Rocky | Internet | PASS |
 | ping google.com | Rocky | DNS + Internet | PASS |
 | ping 10.0.1.1 | Fedora | Ubuntu LAN | PASS |
