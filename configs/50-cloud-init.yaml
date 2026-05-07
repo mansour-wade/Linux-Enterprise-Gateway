@@ -1,0 +1,11 @@
+network:
+  version: 2
+  ethernets:
+    enp0s3:
+      dhcp4: true
+    enp0s8:
+      addresses:
+        - 10.0.1.1/24
+      nameservers:
+        addresses:
+          - 8.8.8.8
