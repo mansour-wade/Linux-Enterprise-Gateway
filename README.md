@@ -100,7 +100,7 @@ network:
 
 `enp0s3` gets its IP automatically from VirtualBox NAT via DHCP. `enp0s8` gets a static `10.0.1.1`, which becomes the gateway address every lab VM points to. Static is non-negotiable here: if the gateway address shifts, the whole lab breaks.
 
-![ip addr show output](screenshots/ip-addr-final-step3.png)
+![ip addr show output](screenshots/ip-addr-final.png)
 
 ### 3. IP Forwarding
 
@@ -277,6 +277,8 @@ This is a good example of a Layer 2 problem disguising itself as a Layer 3 probl
 
 ![Rocky three pings success](screenshots/rocky-three-pings-success.png)
 ![Fedora three pings success](screenshots/fedora-three-pings-success.png)
+![Fedora ping Rocky](screenshots/fedora-ping-rocky.png)
+![Rocky ping Fedora](screenshots/rocky-ping-fedora.png)
 
 ---
 
