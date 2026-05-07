@@ -67,7 +67,7 @@ The `configs/` folder contains the actual configuration files I wrote during thi
 
 ## Network Topology
 
-![Network Topology](screenshots/project1-topology-final.png)
+![Network Topology](screenshots/project1-linux-gateway-topology.png)
 
 ---
 
