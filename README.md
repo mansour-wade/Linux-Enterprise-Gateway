@@ -267,13 +267,13 @@ This is a good example of a Layer 2 problem disguising itself as a Layer 3 probl
 | Test | From | To | Result |
 | :--- | :--- | :--- | :--- |
 | ping 10.0.1.1 | Rocky | Ubuntu LAN | ✅ PASS |
-| ping 8.8.8.8 | Rocky | Internet | PASS |
-| ping google.com | Rocky | DNS + Internet | PASS |
-| ping 10.0.1.1 | Fedora | Ubuntu LAN | PASS |
-| ping 8.8.8.8 | Fedora | Internet | PASS |
-| ping google.com | Fedora | DNS + Internet | PASS |
-| ping 10.0.1.2 | Fedora | Rocky VM | PASS |
-| ping 10.0.1.3 | Rocky | Fedora VM | PASS |
+| ping 8.8.8.8 | Rocky | Internet | ✅ PASS |
+| ping google.com | Rocky | DNS + Internet | ✅ PASS |
+| ping 10.0.1.1 | Fedora | Ubuntu LAN | ✅ PASS |
+| ping 8.8.8.8 | Fedora | Internet | ✅ PASS |
+| ping google.com | Fedora | DNS + Internet | ✅ PASS |
+| ping 10.0.1.2 | Fedora | Rocky VM | ✅ PASS |
+| ping 10.0.1.3 | Rocky | Fedora VM | ✅ PASS |
 
 ![Rocky three pings success](screenshots/rocky-three-pings-success.png)
 ![Fedora three pings success](screenshots/fedora-three-pings-success.png)
