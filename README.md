@@ -256,7 +256,7 @@ sudo nmtui
 
 **Fix:** I changed the VirtualBox adapter from Bridged to Internal Network and set the name to `labnet`. After a reboot, all pings passed immediately.
 
-This is a good example of a Layer 2 problem disguising itself as a Layer 3 problem. The IP config was never the issue.
+IP settings weren't the problem. Rocky was configured correctly, but it was plugged into the wrong virtual switch. It was a Layer 2 mistake that I initially misread as a Layer 3 problem.
 
 ![Rocky adapter set to labnet](screenshots/rocky-adapter-labnet.png)
 
@@ -298,7 +298,7 @@ This is a good example of a Layer 2 problem disguising itself as a Layer 3 probl
 
 A working config means nothing if it doesn't survive a reboot. Persistence has to be part of the plan from day one, not an afterthought.
 
-Layer 2 problems disguise themselves as Layer 3 problems. I spent time questioning IP settings before realizing Rocky was on the wrong virtual switch entirely. Always confirm the physical layer before touching addressing.
+Layer 2 problems disguise themselves as Layer 3 problems. I spent time questioning IP configs before realizing Rocky was plugged into the wrong virtual switch. Always confirm Layer 2 before touching Layer 3.
 
 Ubuntu EOL is a real operational concern. Knowing where archived repos live and how to redirect sources without breaking the package manager is practical sysadmin knowledge that comes up in production environments.
 
