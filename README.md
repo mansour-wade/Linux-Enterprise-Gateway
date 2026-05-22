@@ -262,18 +262,18 @@ IP settings weren't the problem. Rocky was configured correctly, but it was plug
  
 ## Final Verification
  
-All eight tests were run after a full gateway reboot to confirm that iptables rules and routing config survived persistence.
+All eight tests were run after a full gateway reboot to confirm that iptables rules and routing config persisted across the reboot.
  
 | Test | From | To | Notes |
 | :--- | :--- | :--- | :--- |
 | ping 10.0.1.1 | Rocky | Ubuntu LAN | Gateway reachable, LAN routing confirmed |
 | ping 8.8.8.8 | Rocky | Internet | NAT masquerade working |
-| ping google.com | Rocky | DNS + Internet | DNS resolution and internet both confirmed |
-| ping 10.0.1.1 | Fedora | Ubuntu LAN | Gateway reachable from second client |
+| ping google.com | Rocky | DNS + Internet | DNS resolution and outbound internet confirmed |
+| ping 10.0.1.1 | Fedora | Ubuntu LAN | Gateway reachable from Fedora |
 | ping 8.8.8.8 | Fedora | Internet | NAT working on Fedora path |
 | ping google.com | Fedora | DNS + Internet | DNS resolution confirmed on Fedora |
-| ping 10.0.1.2 | Fedora | Rocky VM | East-west traffic between clients working |
-| ping 10.0.1.3 | Rocky | Fedora VM | Return path confirmed |
+| ping 10.0.1.2 | Fedora | Rocky | Fedora can reach Rocky directly |
+| ping 10.0.1.3 | Rocky | Fedora | Rocky can reach Fedora directly |
  
 ![Rocky three pings success](screenshots/rocky-three-pings-success.png)
 ![Fedora three pings success](screenshots/fedora-three-pings-success.png)
